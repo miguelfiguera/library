@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="book_constructor.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1 id="title"> Library App </h1>
+    <p>This is a project for 
+        <a href="https://www.theodinproject.com/lessons/library" target="_blank">The Odin Project</a> 
+    </p>
+    
+
+    <form id="bookForm" action="" method="POST">
+
+        <label for="author">Author:</label><br/>
+        <input type="text" id="author" class="author" placeholder="Stephen King" required/> <br />
+
+        <label for="title">Title:</label><br/>
+        <input type="text" id="title" class="title" placeholder="Salem's Lot" required/> <br />
+        
+        <label for="pages">Number of Pages:</label><br/>
+        <input type="number" id="pages" class="pages" min="1" required/> <br />
+        
+        <span class="readQuestion">Have you read the book?</span>
+        <label class="switch" for="read">
+            <input type="checkbox" id="read" class="read"/>  
+            <span class="slider round"></span>
+        </label>
+        <br />
+
+        <button type="submit" class="submitBtn"> Submit </button>
+    </form> 
+ </body>
+ </html>
